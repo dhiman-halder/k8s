@@ -5,7 +5,7 @@ metadata:
   labels:
     tier: frontend
   annotations:
-    kubernetes.io/change-cause: nginx image updated to 1.7.9    
+    kubernetes.io/change-cause: nginx image version 1.7.9    
 spec:
   template:
     metadata:
