@@ -9,19 +9,17 @@ spec:
   selector:
     matchLabels:
       app: wordpress
-      tier: frontend
   template:
     metadata:
       labels:
         app: wordpress
-        tier: frontend
     spec:
       containers:
         - image: wordpress
           name: wordpress
           env:
           - name: WORDPRESS_DB_HOST
-            value: mysql-service:3306
+            value: mysql:3306
           - name: WORDPRESS_DB_PASSWORD
             value: Password1$
           ports:
