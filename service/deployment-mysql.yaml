@@ -9,12 +9,10 @@ spec:
   selector:
     matchLabels:
       app: mysql
-      tier: backend
   template:
     metadata:
       labels:
         app: mysql
-        tier: backend
     spec:
       containers:
         - image: mysql:5.6
